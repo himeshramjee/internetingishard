@@ -1,0 +1,88 @@
+* {
+  /* Reset all default browser styles so we have full control over page styling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.page {
+  background-color: lightgray;
+  margin: 5px auto;
+  width: 70%;
+  height: 700px;
+  border: 1px solid blue;
+}
+
+.menu {
+  background-color: lightblue;
+  height: 100px;
+}
+
+.sidebar {
+  background-color: darkorchid;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.content {
+  background-color: whitesmoke;
+  /* 
+  Explicit clear left will force layout to take height of sidebar into account.
+  Clearing it makes it follow default vertical box layout.
+  */
+  /* clear: left; */
+  height: 100%;
+  /* 
+  We want content to fill remaining space on row. 
+  Float right will create gap in middle which will be filled by footer 
+  */
+  /* float: right; */
+}
+
+.footer {
+  background-color: orange;
+  height: 100px;
+}
+
+.footer-left {
+  background-color: lightyellow;
+  width: 20%;
+  height: 80%;
+  /* Left so as to not fill the row and allow center footer to use same row */
+  float: left;
+  text-align: right;
+}
+
+.footer-center {
+  background-color: lightpink;
+  width: 60%;
+  height: 80%;
+  /* Left so as to not fill the row and allow right footer to use same row */
+  float: left; 
+  margin: 0 auto; /* Center the element within available space */
+  border: 1px solid;
+}
+
+.footer-right {
+  background-color: lightslategray;
+  /* width: 20%;  */ /* Fill remaining space? */
+  height: 80%;
+  /* 
+  Filling remaining space so not required? 
+  If applying then must also specifiy width to fill the space, prevent bottom footer to use same row.
+  */
+  /* float: left; */
+  text-align: left;
+}
+
+.footer-bottom {
+  background-color: black;
+  color: white;
+  width: 70%;
+  height: 15%;
+  margin: 0px auto;
+  font-size: small;
+}

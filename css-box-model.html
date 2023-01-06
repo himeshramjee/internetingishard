@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Boxes Are Easy!</title>
+    <link rel='stylesheet' href='css-box-model.css'/>
+  </head>
+  <body>
+    <h1>Headings Are Block Elements</h1>
+
+    <p>Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt;
+       elements are not. They are <strong>inline</strong> elements.</p>
+    <div style='padding-top: 1px'></div> <!-- Invisible element to prevent vertical margin collapse -->
+    <p>Block elements define the flow of the HTML document, while inline elements
+       do not.
+    </p>
+
+    <p>
+    Both &lt;div&gt; and &lt;span&gt; are “container” elements that don’t have any affect on the semantic structure of an HTML document. They do, however, provide a hook for adding CSS styles to arbitrary sections of a web page. For example, sometimes you need to add an invisible box to prevent a margin collapse, or maybe you want to group the first few paragraphs of an article into a synopsis with slightly different text formatting.
+    </p>
+
+    <p>
+      Default block-rendering behavior is for elements to fill the width of their container.
+      Centering requires an explicit width property. 
+    </p>
+
+    <hr/>
+    <h1>
+      Box Model Properties
+    </h1>
+    <p>The CSS Box Model includes 4 properties. Starting from the innermost HTML <em>Content</em> we have</p>
+    <ol>
+      <li>Content is the actual HTML element</li>
+      <li>Padding is the clickable space around the Content</li>
+      <li>Border is a line around the padded Content. CSS properties like 'background-color' are bound by this property.</li>
+      <li>Margin is the always transparent non-clickable space/padding between the Border and other adjacent HTML elements</li>
+    </ol>
+    
+    <hr/>
+    <div id="divButton">Button</div>
+    <div id="divButton">Button</div>
+    <div id="divButton">Button</div>
+    <p>
+      CSS provides the width and height properties. These take precedence over the default size of a box’s content body.
+      The width and height properties only define the size of a box’s content. Its padding and border are both added on top of whatever explicit dimensions you set.
+    </p>
+    
+    <hr/>
+    <p>
+      There are three methods for horizontally aligning block-level elements: “auto-margins” for center alignment, “floats” for left/right alignment, and “flexbox” for complete control over alignment. Yes, unfortunately block-level alignment is totally unrelated to the text-align property.
+    </p>
+    <p>
+      When you set the left and right margin of a block-level element to auto, it will center the block in its parent element.
+    </p>
+    <hr/>
+    <a href="./index.html">Basic HTML</a>
+    <a href="./page-one.html">Page One</a>
+    <a href="./page-two.html">Page Two</a>
+    <a href="./css-box-model.html">CSS Box Model</a>
+    <a href="./css-selectors.html">CSS Selectors</a>
+    <a href="./css-floats.html">CSS Floats</a>
+  </body>
+</html>

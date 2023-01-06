@@ -1,0 +1,112 @@
+* {
+  /* Reset all default browser styles so we have full control over page styling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  /* background-color: red; */
+}
+
+body {
+  background-color: lightgray;
+  padding: 5px;
+}
+
+.page {
+  margin: 10px auto;
+  width: 70%;
+  height: 700px;
+  border: 1px solid blue;
+}
+
+.menu {
+  background-color: lightblue;
+  height: 5em;
+}
+
+.sidebar-left {
+  background-color: darkorchid;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.content {
+  background-color: whitesmoke;
+  /* 
+  Explicit clear left will force layout to take height of sidebar into account.
+  Clearing it makes it follow default vertical box layout.
+  */
+  /* clear: left; */
+  width: 60%;
+  height: 60%;
+  /* 
+  We want content to fill remaining space on row. 
+  Float right will create gap in middle which will be filled by footer 
+  */
+  float: left;
+}
+
+.sidebar-right {
+  background-color: darkgoldenrod;
+  float: right;
+  width: 20%;
+  height: 100%;
+}
+
+.footer {
+  background-color: lightslategray;
+}
+
+.footer div {
+  margin: 3px 1.15%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-left {
+  background-color: lightyellow;
+  width: 31%;
+  height: 75%;
+  /* 
+  Left so no single div will fill the row.
+  i.e. Allows for center footer to use same row as left footer. 
+  */
+  float: left;
+  text-align: right;
+}
+
+.footer-center {
+  background-color: lightpink;
+  width: 31%;
+  height: 75%;
+  /* 
+  Left so no single div will fill the row.
+  i.e. Allows for right footer to use same row as left footer. 
+  */
+  float: left;
+  margin: 0 auto; /* Center the element within available space */
+  border: 1px solid;
+}
+
+.footer-right {
+  background-color: orange;
+  width: 31%;
+  height: 75%;
+  float: left;
+  text-align: left;
+}
+
+.footer-bottom {
+  clear: both;
+  background-color: black;
+  color: white;
+  /* width: 90%; */
+  height: 15%;
+  margin: 0px auto;
+  font-size: small;
+}
