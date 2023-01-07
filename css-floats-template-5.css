@@ -68,7 +68,7 @@ body {
 }
 
 .sidebar-comment img {
-  background-image: url(./no-img-comment-avatar.png);
+  background-image: url(./images/no-img-comment-avatar.png);
   background-repeat: no-repeat;
   float: right;
   margin-left: 5px;

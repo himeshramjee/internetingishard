@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  /* Same effect as adding margin: 0 auto to child elements with CSS Float layouts */
+  justify-content: center;
+  background-color: #5995DA;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.links {
+  display: flex;
+}
+
+.signup {
+  margin-left: auto;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header {
+  background-color: #D6E9FE;
+  color: #5995DA;
+  display: flex;
+  justify-content: space-between;
+  /* Vertical alignment */
+  align-items: center;
+  flex: 1;
+  /* width: 900px; */
+  height: 300px;
+}
+
+.photo-grid-container {
+  background-color: #fff;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* 
+  Default is row.
+  This impacts the justify-contents orientation too so use align items to achieve center.
+  */
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+.first-item {
+  order: 0;
+}
+
+.last-item {
+  order: 0;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.content-summary {
+  padding: 20px;
+}
+
+.content-summary p, ul {
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
+
+.footer-one {
+  text-align: right;
+}
+
+.footer-two {
+  flex: 2;
+  text-align: center;
+}
+
+.footer-three {
+  text-align: left;
+}
