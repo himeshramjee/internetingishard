@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Layout Panels */
+/* ========================================================  */
+.page {
+  margin: 5px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header div {
+  padding: 5px;
+}
+
+.page-content-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Page Header Panel */
+/* ========================================================  */
+
+.logo-panel {
+  background-image: url(./images/no-img-comment-avatar.png);
+  background-repeat: no-repeat;
+  width: 15%;
+  display: flex;
+  justify-content: right;
+}
+
+.navigation-panel {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.notifications-panel {
+  background-image: url(./images/icons/icons8-notification-24.png);
+  background-repeat: no-repeat;
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-info-panel {
+  background-image: url(./images/icons/icons8-login-24.png);
+  background-repeat: no-repeat;
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Page Content Panel */
+/* ========================================================  */
+.left-navigation-panel {
+  width: 20%;
+  display: flex;
+  justify-content: left;
+}
+
+.main-content-panel {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.activity-panel {
+  width: 20%;
+}
+
+.journal-entry {
+  border: solid 1px red;
+  width: 300px;
+  height: 100px;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.journal-entry-avatar {
+  width: 34px;
+  height: 34px;
+
+}
+
+/* Page Footer Panel */
+/* ========================================================  */
+.channel-links-panel {
+  display: flex;
+  justify-content: right;
+}
+
+.built-with-panel ul {
+  list-style: lower-greek;
+}
