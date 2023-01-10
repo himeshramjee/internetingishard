@@ -7,32 +7,40 @@
 /* Page Layout Panels */
 /* ========================================================  */
 .page {
-  margin: 5px;
+  margin: 10px;
 }
 
-.page-header {
+.page-header-panel {
+  border-bottom: solid 1px blue;
   display: flex;
   justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
 }
 
-.page-header div {
+.page-header-panel div {
   padding: 5px;
 }
 
 .page-content-panel {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
 
-.page-footer {
+.page-footer-panel {
+  border-top: solid 1px blue;
   display: flex;
   justify-content: space-between;
+  margin: 30px;
+  padding: 20px;
 }
 
 /* Page Header Panel */
 /* ========================================================  */
 
 .logo-panel {
+  border-right: solid 1px blue;
   background-image: url(./images/no-img-comment-avatar.png);
   background-repeat: no-repeat;
   width: 15%;
@@ -47,17 +55,20 @@
 }
 
 .notifications-panel {
-  background-image: url(./images/icons/icons8-notification-24.png);
-  background-repeat: no-repeat;
+  border-left: solid 1px blue;
   width: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.notifications-counter-badge {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
 .account-info-panel {
-  background-image: url(./images/icons/icons8-login-24.png);
-  background-repeat: no-repeat;
   width: 5%;
   display: flex;
   justify-content: center;
@@ -66,34 +77,46 @@
 
 /* Page Content Panel */
 /* ========================================================  */
-.left-navigation-panel {
-  width: 20%;
+.left-content-panel {
+  border-right: solid 1px blue;
+  width: 15%;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+}
+
+.sticky-notes-panel {
+  height: 50%;
+}
+
+.todo-list-panel {
+  height: 50%;
 }
 
 .main-content-panel {
   width: 60%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .activity-panel {
-  width: 20%;
+  width: 30%;
 }
 
 .journal-entry {
-  border: solid 1px red;
-  width: 300px;
-  height: 100px;
-  overflow: scroll;
+  border: dashed 0.5px;
+  border-radius: 5px;
+  height: 70px;
   padding: 10px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
 }
 
 .journal-entry-avatar {
-  width: 34px;
-  height: 34px;
-
+  width: 45px;
+  height: 45px;
 }
 
 /* Page Footer Panel */
