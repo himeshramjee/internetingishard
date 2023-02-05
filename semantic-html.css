@@ -1,0 +1,5 @@
+/* This makes the new semantic elements behave like <div> elements 
+   (which are block boxes, not inline boxes) in legacy browsers. */
+section, article, aside, footer, header, nav {
+  display: block;
+}
